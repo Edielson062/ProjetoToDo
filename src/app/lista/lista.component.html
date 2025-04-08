@@ -1,0 +1,11 @@
+<h2>Lista de Alunos</h2>
+
+<div *ngIf="listaDeAlunos.length === 0">
+  Nenhum Aluno cadastrado
+</div>
+
+<ul>
+  <li *ngFor="let nomeAluno of listaDeAlunos">{{nomeAluno}}</li>
+</ul>
+
+<a routerLink="/formulario">Inserir Aluno</a>
